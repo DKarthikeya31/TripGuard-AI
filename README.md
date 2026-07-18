@@ -22,7 +22,7 @@ Flights get cancelled. Connections get missed. TripGuard AI detects the disrupti
 
 ---
 
-## 📑 Table of Contents
+## 📑 Quick Navigation
 
 1. [The Problem](#-the-problem)
 2. [Our Solution](#-our-solution)
