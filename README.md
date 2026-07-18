@@ -32,9 +32,10 @@ Flights get cancelled. Connections get missed. TripGuard AI detects the disrupti
 6. [Tech Stack](#️-tech-stack)
 7. [Business Impact](#-business-impact-for-american-express)
 8. [Transparency & Trust](#-transparency--trust)
-9. [Feasibility & Roadmap](#-feasibility--roadmap)
-10. [Team](#-team)
-11. [Demo](#️-demo)
+9. [Research Foundation](#-research-foundation)
+10. [Feasibility & Roadmap](#-feasibility--roadmap)
+11. [Team](#-team)
+12. [Demo](#️-demo)
 
 ---
 
@@ -171,6 +172,23 @@ Every autonomous decision comes with a plain-language explanation:
 > *"Your original flight was cancelled. We rebooked you on the next available flight in your fare class, arriving only 40 minutes later than planned, and extended your hotel check-in by 2 hours at no extra cost — all within your card's travel protection policy."*
 
 This reasoning layer builds member trust in autonomous decisions and gives Amex a full audit trail for every action taken. Anything above policy limits **always goes to a human** — the system never overrides real judgment on high-stakes calls.
+
+---
+
+## 📚 Research Foundation
+
+TripGuard AI's architecture is not just an implementation exercise — each core design decision is grounded in current academic and industry research on agentic AI, airline disruption recovery, and human-in-the-loop trust frameworks.
+
+| # | Title | Grounds This Part of TripGuard AI | Link |
+|---|---|---|---|
+| 1 | AgentAbstain: Do LLM Agents Know When Not to Act? | Policy Check & Escalation (Steps 6–8) | [arXiv](https://arxiv.org/html/2607.10059) |
+| 2 | Disruption Management in Airline Operations: A Solver-based Approach using Time-Space Network Optimization | Decision Engine | [arXiv](https://arxiv.org/html/2510.26831) |
+| 3 | Agentic AI and Autonomous Decision-Making: A Review of Human-in-the-Loop Frameworks, Oversight Mechanisms, and Trust Calibration | Human Agent Escalation | [ResearchGate](https://www.researchgate.net/publication/403947038) |
+| 4 | Human-in-the-Loop Agentic AI for Financial Services | Transparency & Trust Layer | [ResearchGate](https://www.researchgate.net/publication/400549815) |
+| 5 | Addressing the Systemic Complexity of Airline Irregular Operations: Toward Integrated Schedule Recovery | Integrated (vs. siloed) recovery approach | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0969699725001887) |
+| 6 | Airline Recovery Problem Under Disruptions: A Review | Overall problem framing | [arXiv](https://arxiv.org/abs/2401.04866) |
+
+📄 Full reference list with additional supporting papers: [REFERENCES.md](./REFERENCES.md)
 
 ---
 
