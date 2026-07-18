@@ -1,9 +1,16 @@
-# TripGuard AI 🧳✈️
-### Autonomous Travel-Disruption Concierge
+<div align="center">
 
-**American Express CodeStreet Hackathon 2026**
+# 🧳✈️ TripGuard AI
 
-> Flights get cancelled. Connections get missed. TripGuard AI detects the disruption the moment it happens — and fixes it before the card member even knows there's a problem.
+**Autonomous Travel-Disruption Concierge**
+
+*American Express CodeStreet Hackathon 2026*
+
+</div>
+
+<p align="center">
+Flights get cancelled. Connections get missed. TripGuard AI detects the disruption the moment it happens — and fixes it before the card member even knows there's a problem.
+</p>
 
 ---
 
@@ -48,39 +55,24 @@ No manual searching. No hold music. No confusion — just a resolved trip and a 
 
 ## 🏗️ How It Works — System Architecture
 
+```mermaid
+flowchart TD
+    A[Flight Status Feed<br/>Amadeus / Sabre API] --> B[Disruption Detector<br/>cancellation, delay, missed connection]
+    B --> C[Decision Engine — Agentic AI Layer<br/>fare class, loyalty tier, policy limits, urgency]
+    C --> D[Action Layer<br/>executes rebooking: flight + hotel APIs]
+    D --> E[Notification Engine<br/>plain-language update to card member]
+    E --> F[Transparency Layer<br/>explains why this option was chosen]
+    C -.out of policy.-> G[Human Agent Escalation<br/>full context handoff]
 ```
-┌─────────────────────┐
-│  Flight Status Feed  │  (Amadeus / Sabre API — live disruption events)
-└──────────┬───────────┘
-           │
-           ▼
-┌─────────────────────┐
-│  Disruption Detector │  → identifies cancellation, delay, or missed connection
-└──────────┬───────────┘
-           │
-           ▼
-┌─────────────────────┐
-│   Decision Engine    │  → evaluates alternatives against:
-│  (Agentic AI Layer)  │     - fare class & loyalty tier
-│                      │     - card benefit policy limits
-│                      │     - time-to-departure urgency
-└──────────┬───────────┘
-           │
-           ▼
-┌─────────────────────┐
-│    Action Layer      │  → executes rebooking (flight + hotel APIs)
-└──────────┬───────────┘
-           │
-           ▼
-┌─────────────────────┐
-│ Notification Engine  │  → sends card member a plain-language update
-└──────────┬───────────┘
-           │
-           ▼
-┌─────────────────────┐
-│ Transparency Layer   │  → "Here's why we chose this option" explanation
-└──────────────────────┘
-```
+
+**Flow summary:**
+1. **Flight Status Feed** — pulls live disruption events from Amadeus/Sabre
+2. **Disruption Detector** — flags cancellations, delays, or missed connections
+3. **Decision Engine** — the agentic AI core; weighs alternatives against fare rules, loyalty tier, and policy limits
+4. **Action Layer** — executes the rebooking automatically
+5. **Notification Engine** — informs the card member in plain language
+6. **Transparency Layer** — shows the reasoning behind the decision
+7. **Escalation path** — if a case falls outside policy, a human agent takes over with full context
 
 If a decision falls outside pre-approved policy (e.g. cost above threshold, no acceptable alternative), the system **escalates to a human agent with full context** — no cold handoffs.
 
@@ -154,4 +146,6 @@ This reasoning layer builds member trust in autonomous decisions and gives Amex 
 
 ---
 
-*Built for the American Express CodeStreet Hackathon — turning travel disruptions from a moment of stress into a moment of trust.*
+<p align="center">
+<em>Built for the American Express CodeStreet Hackathon — turning travel disruptions from a moment of stress into a moment of trust.</em>
+</p>
