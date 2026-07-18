@@ -6,6 +6,14 @@
 
 *American Express CodeStreet Hackathon 2026*
 
+![React Native](https://img.shields.io/badge/Frontend-React%20Native-61DAFB?style=flat-square&logo=react)
+![Node.js](https://img.shields.io/badge/Backend-Node.js%20%7C%20FastAPI-339933?style=flat-square&logo=node.js)
+![LangChain](https://img.shields.io/badge/Agentic%20AI-LangChain%20%7C%20AutoGen-1C3C3C?style=flat-square)
+![AWS](https://img.shields.io/badge/Cloud-AWS-FF9900?style=flat-square&logo=amazonaws)
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL%20%7C%20Redis-4169E1?style=flat-square&logo=postgresql)
+![Status](https://img.shields.io/badge/Status-Hackathon%20MVP-orange?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
+
 </div>
 
 <p align="center">
