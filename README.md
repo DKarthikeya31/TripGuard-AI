@@ -207,56 +207,6 @@ TripGuard AI's architecture is not just an implementation exercise — each core
 
 ---
 
-
-<p align="center">
-<em>Built for the American Express CodeStreet Hackathon — turning travel disruptions from a moment of stress into a moment of trust.</em>
-</p>
-
-## Run it
-
-```bash
-npm install
-npm start
-```
-
-Then open http://localhost:3000
-
-## What's real vs mocked
-
-- **Real**: Express API, rule-based Decision Engine (policy checks),
-  plain-language reasoning generator, full request/response flow.
-- **Mocked**: itinerary + disruption data (`server/data/itinerary.js`),
-  no live Amadeus/Sabre calls, no real rebooking against airline systems.
-
-## Optional: real Claude-generated reasoning
-
-By default the "Transparency Layer" explanation is built from a template
-(`server/services/decisionEngine.js` -> `templateExplanation`), so the
-demo works with no API key. To have Claude write the explanation instead,
-set an environment variable before starting the server:
-
-```bash
-export ANTHROPIC_API_KEY=sk-ant-...
-npm start
-```
-
-## Demo flow
-
-1. Load the page — shows the current itinerary as a boarding-pass style card.
-2. Click **"Cancel flight — in-policy"** — watch it auto-resolve with a
-   reasoning card explaining the rebooking.
-3. Click **"Reset demo"**, then **"Cancel flight — needs approval"** —
-   watch it escalate to a human agent instead, with the reasons why.
-
-## Next steps to extend
-
-- Swap `server/data/itinerary.js` for a Postgres-backed itinerary store.
-- Replace mock alternates with live Amadeus for Developers flight search.
-- Add Twilio/FCM push for the notification layer instead of in-page UI.
-
----
-
-
 ## 👥 Team
 
 | Name | Role |
@@ -274,3 +224,7 @@ npm start
 - **Pitch Deck**: [link here]
 
 ---
+
+<p align="center">
+<em>Built for the American Express CodeStreet Hackathon — turning travel disruptions from a moment of stress into a moment of trust.</em>
+</p>
