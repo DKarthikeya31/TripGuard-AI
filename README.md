@@ -180,10 +180,10 @@ This reasoning layer builds member trust in autonomous decisions and gives Amex 
 <div align="center">
 
 **Auto-resolved within policy**
-<img src="assets/resolved-demo.png" width="500" />
+<img src="assets/resolved-demo.png" width="700" />
 
 **Escalated to a human agent**
-<img src="assets/escalated-demo.png" width="500" />
+<img src="assets/escalated-demo.png" width="700" />
 
 </div>
 
