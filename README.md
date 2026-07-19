@@ -175,6 +175,20 @@ This reasoning layer builds member trust in autonomous decisions and gives Amex 
 
 ---
 
+## 📸 Demo
+
+<div align="center">
+
+**Auto-resolved within policy**
+<img src="assets/resolved-demo.png" width="500" />
+
+**Escalated to a human agent**
+<img src="assets/escalated-demo.png" width="500" />
+
+</div>
+
+---
+
 ## 📚 Research Foundation
 
 TripGuard AI's architecture is not just an implementation exercise — each core design decision is grounded in current academic and industry research on agentic AI, airline disruption recovery, and human-in-the-loop trust frameworks.
