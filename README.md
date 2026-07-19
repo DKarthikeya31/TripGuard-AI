@@ -175,7 +175,7 @@ This reasoning layer builds member trust in autonomous decisions and gives Amex 
 
 ---
 
-## 📸 Demo
+## 📸 Screenshots
 
 <div align="center">
 
