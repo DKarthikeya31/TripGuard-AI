@@ -1,0 +1,14 @@
+{
+  "name": "tripguard-ai",
+  "version": "0.1.0",
+  "description": "TripGuard AI — autonomous travel-disruption concierge (hackathon MVP)",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

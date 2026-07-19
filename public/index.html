@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TripGuard AI — Trip TRIP-8841</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">TG</span>
+      <span class="brand-name">TripGuard AI</span>
+    </div>
+    <div class="member">
+      <span class="member-tier" id="memberTier">Platinum</span>
+      <span class="member-name" id="memberName">J. Whitfield</span>
+    </div>
+  </header>
+
+  <main class="stage">
+
+    <!-- Signature element: boarding-pass style stub that redraws on resolution -->
+    <section class="stub" id="stub" data-status="MONITORING">
+      <div class="stub-main">
+        <div class="stub-route">
+          <span class="code" id="origin">JFK</span>
+          <svg class="plane" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M2 12l19-8-6 8 6 8-19-8z" fill="currentColor"/>
+          </svg>
+          <span class="code" id="destination">LHR</span>
+        </div>
+        <div class="stub-flight" id="flightNumber">AA 100</div>
+        <div class="stub-times">
+          <div><span class="label">Departs</span><span class="value" id="depTime">—</span></div>
+          <div><span class="label">Arrives</span><span class="value" id="arrTime">—</span></div>
+        </div>
+      </div>
+      <div class="stub-perf" aria-hidden="true"></div>
+      <div class="stub-status">
+        <span class="dot" id="statusDot"></span>
+        <span class="status-text" id="statusText">Monitoring your flight</span>
+      </div>
+    </section>
+
+    <!-- Reasoning / transparency card -->
+    <section class="reasoning-card" id="reasoningCard" hidden>
+      <h2 id="reasoningTitle">What happened</h2>
+      <p id="reasoningText"></p>
+      <div class="reasoning-meta" id="reasoningMeta"></div>
+    </section>
+
+    <!-- Escalation card -->
+    <section class="escalation-card" id="escalationCard" hidden>
+      <h2>Handed to a specialist</h2>
+      <p id="escalationText"></p>
+      <p class="escalation-sub">Full case history has been shared — no need to repeat anything.</p>
+    </section>
+
+    <!-- Demo controls -->
+    <section class="controls">
+      <p class="controls-label">Simulate an event</p>
+      <div class="controls-row">
+        <button id="btnInPolicy" class="btn btn-primary">Cancel flight — in-policy</button>
+        <button id="btnOutOfPolicy" class="btn btn-secondary">Cancel flight — needs approval</button>
+        <button id="btnReset" class="btn btn-ghost">Reset demo</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    Hackathon MVP — disruption events are simulated, no live airline data is used.
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
