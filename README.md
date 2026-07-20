@@ -221,15 +221,6 @@ TripGuard AI's architecture is not just an implementation exercise — each core
 
 ---
 
-## 👥 Team
-
-| Name | Role |
-|---|---|
-| [Your Name] | [Role] |
-| [Teammate] | [Role] |
-| [Teammate] | [Role] |
-
----
 
 ## 📽️ Demo
 
