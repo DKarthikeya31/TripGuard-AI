@@ -7,7 +7,7 @@
 *American Express CodeStreet Hackathon 2026*
 
 ![React Native](https://img.shields.io/badge/Frontend-React%20Native-61DAFB?style=flat-square&logo=react)
-![Kafka](https://img.shields.io/badge/Kafka%20Native-61DAFB?style=flat-square&logo=Kafka)
+![Kafka](https://img.shields.io/badge/Kafka%20-61DAFB?style=flat-square&logo=Kafka)
 ![Node.js](https://img.shields.io/badge/Backend-Node.js%20%7C%20FastAPI-339933?style=flat-square&logo=node.js)
 ![LangChain](https://img.shields.io/badge/Agentic%20AI-LangChain%20%7C%20AutoGen-1C3C3C?style=flat-square)
 ![AWS](https://img.shields.io/badge/Cloud-AWS-FF9900?style=flat-square&logo=amazonaws)
